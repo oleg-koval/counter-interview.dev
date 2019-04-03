@@ -1,0 +1,9 @@
+package.json
+.git
+_site/
+.sass-cache/
+.jekyll-metadata
+.DS_Store
+assets/css
+node_modules
+*.swp
