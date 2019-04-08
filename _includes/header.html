@@ -1,0 +1,31 @@
+<header class="site-header">
+
+  <div class="wrapper pbn">
+    {% include nav.html %}
+    {% if page.layout == "home" %}
+    <h1 class="intro">Counter <br>Interview</h1>
+    {% include info-block.html title="An open source collection of Interview questions." description=""%}
+  </div>
+  <div class="grid-background">
+    <div class="wrapper">
+
+      {% assign authors =  site.examples | map: 'author' | uniq %}
+      {% assign questions =  site.examples | map: 'questions' | join: '- question:'  | split: '- question:' | uniq %}
+      <p class="full h3 mtn">The collection contains:</p>
+      <div class="three-up">
+        <p class="h1 bold mtn mbn">{{ site.examples.size }}</p>
+        <p>Examples</p>
+      </div>
+      <div class="three-up">
+        <p class="h1 bold mtn mbn">{{ questions.size }}</p>
+        <p>Questions</p>
+      </div>
+      <div class="three-up">
+        <p class="h1 bold mtn mbn">{{ authors.size }}</p>
+        <p>Creators</p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  </div>
+</header>

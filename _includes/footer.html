@@ -1,0 +1,98 @@
+<div class="footer">
+  <div class="wrapper">
+    <div class="full">
+      <p class="h4"><a href="https://github.com/oleg-koval">Oleg Koval</a> maintains <a href="/">counter-interview.dev</a> as an open source resource.</p>
+    </div>
+
+    <div class="two-up">
+      <p class="h3 bold">Community</p>
+      <ul class="logos">
+        <p>Contribute on <a href="{{site.contribute-url}}">Github</a>.</p>
+        <li><a href="https://twitter.com/cntrinterview"><img src="/images/twitter-icon.svg" class="logo" alt="Follow Counter Interview on Twitter @cntrinterview"></a></li>
+        <li><a href="{{site.contribute-url}}"><img src="/images/github-icon.svg" class="logo" alt="Contribute to this project on GitHub"></a>
+        <li>
+
+      </ul>
+      <p style="clear:both;">Thanks to the <a href="https://github.com/oleg-koval/counter-interview.dev/graphs/contributors">contributors to this project</a>.</p>
+    </div>
+  </div>
+</div>
+
+{% if page.layout == 'examples' %}
+<script src="{{site.baseurl}}/js/list.min.js"></script>
+<script src="{{site.baseurl}}/js/index.js"></script>
+<script>
+  if (document.querySelectorAll && window.addEventListener && "classList" in document.documentElement) {
+    var viewToggle = document.querySelector("a.view-toggle"),
+      tiles = document.querySelectorAll("div.tile");
+    viewToggle.addEventListener("click", function(event) {
+      event.preventDefault();
+      viewToggle.classList.toggle("view-toggle-list");
+      tiles.forEach(function(elem) {
+        elem.classList.toggle("tile-list");
+      });
+    });
+  }
+</script>
+<script>
+  function _toConsumableArray(arr) {
+    if (Array.isArray(arr)) {
+      for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
+        if (window.CP.shouldStopExecution(1)) {
+          break;
+        }
+        arr2[i] = arr[i];
+      }
+      window.CP.exitedLoop(1);
+      return arr2;
+    } else {
+      return Array.from(arr);
+    }
+  }
+
+  var checks = [].concat(_toConsumableArray(document.querySelectorAll('input[type="checkbox"]')));
+  var listItems = [].concat(_toConsumableArray(document.querySelectorAll(".tile")));
+  var filter = function filter() {
+    var filters = [];
+
+    // Loop each checkbox to build up array of tags
+    checks.map(function(item) {
+      if (item.checked) {
+        filters.push(item.value);
+      }
+    });
+
+    // Loop each list item
+    listItems.map(function(item) {
+      if (!item.hasAttribute('data-tags') && filters.length) {
+        item.setAttribute("hidden", "");
+        return;
+      }
+
+      if (!filters.length) {
+        item.removeAttribute('hidden');
+        return;
+      }
+      // Break data attr into an array
+      var tags = item.getAttribute("data-tags").split(",");
+
+      // If the tags array contains one or more of the filter items, show it
+      if (tags.some(function(tag) {
+          return filters.indexOf(tag) >= 0;
+        })) {
+        item.removeAttribute("hidden");
+      }
+
+      // Otherwise hide
+      else {
+        item.setAttribute("hidden", "");
+      }
+    });
+  };
+
+  // Add change event to cbs
+  checks.map(function(check) {
+    return check.addEventListener("change", filter);
+  });
+</script>
+{% endif %}

@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<div class="wrapper">
+  <header class="example-header">
+    <h1>{{page.title}}</h1>
+    <div style="max-width: 40em;">
+      {% if page.overview %}
+      <p>{{page.overview | newline_to_br}}</p>
+      {% else %}
+      {% assign missingOverview = true %}
+      {% endif %}
+      {% if page.overview-author %}
+      <p>Overview by <a href="https://twitter.com/{{page.overview-author}}">{{page.overview-author}}</a></p>
+      {% endif %}
+      {% if page.role %}
+      <p>Role: <strong>{{page.role}}</strong></p>
+      {% endif %}
+    </div>
+  </header>
+
+  <article>
+    <ol class="questions">
+      {% for question in page.questions %}
+      <li id="{{question.question | slugify}}">
+        <h2>{{ question.question }}</h2>
+
+        {% if question.summary %}
+        <p>
+          {{ question.summary  | newline_to_br | markdownify }}
+        </p>
+        {% else %}
+        {% assign missingSummary = true %}
+        {% endif %}
+
+        {% endfor %}
+      </li>
+    </ol>
+  </article>
+  <aside>
+
+    {% if page.author %}
+    <p><strong>Author:</strong><br>
+      {{page.author}}
+    </p>
+    {% else %}
+    {% assign missingAuthor = true %}
+    {% endif %}
+
+    {% if page.link %}
+    <p><strong>Source:</strong><br>
+      <a href="{{page.link}}" class="wrap-string">{{page.link | remove: 'https://' | remove: 'http://' | remove: 'www.' }}</a>
+    </p>
+    {% else %}
+    {% assign missingSource = true %}
+    {% endif %}
+
+    <p>&nbsp;</p>
+
+    <p><a href="https://github.com/oleg-koval/counter-interview.dev/blob/master{{page.url | replace:'examples','_examples'}}.md">Edit this page</a></p>
+
+  </aside>
+
+
+
+  {% include missing-info.html %}
+</div>

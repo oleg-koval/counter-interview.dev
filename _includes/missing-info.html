@@ -1,0 +1,32 @@
+{% if missingOverview or missingSummary or missingAuthor %}
+
+<div class="help-footer">
+  <p class="h3 bold" style="margin-top: 0;">Help needed for "{{page.title}}"!</p>
+  <p>The following is missing from this set of questions: </p>
+
+  {% if missingOverview %}
+  <p><strong>Overview:</strong> e.g. </p>
+  <pre>
+overview example...</pre>
+  {% endif %}
+
+  {% if missingAuthor %}
+  <p><strong>Author:</strong> The name of the author, team e.g. </p>
+  <pre>author: John Doe</pre>
+  {% endif %}
+
+  {% if missingSummary %}
+  <p><strong>Summary:</strong> Couple of good words here</p>
+  <pre>
+- question: What is your favourite sport?
+summary: Cuz I wanna know...</pre>
+
+  {% endif %}
+  {% if page.link %}
+  <p><strong>Tip!</strong> You may be able to find the missing information at the source URL: <br><a href="{{page.link}}">{{page.link}}</a>.
+  </p>
+  {% endif %}
+  <p>It would be great if you could contribute and <a href="{{site.contribute-url}}">update this set of questions</a> with anything that's missing!</p>
+
+</div>
+{% endif %}

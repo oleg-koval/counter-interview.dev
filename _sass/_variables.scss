@@ -1,0 +1,55 @@
+// Variables
+// ---------------------------------------/
+
+$container-width: 40em !default;
+$grid-gutter:     10px !default;
+
+
+// Colors
+$white:             #fff;
+$black:             #2B4C6F;
+$header-color:      hsl(210, 45%, 85%);
+$primary:           #738CA6;
+$secondary:         #4D6C8C; //blue
+
+$green:             #9ccf31;
+$red:               #ce0000;
+$orange:            #ff9e00;
+
+$dark-grey:         #333;
+$mid-grey:          #666;
+$light-grey:        #999;
+$silver:            #D4DDE7;
+$linen:             #FFF6E8;
+
+$background:        $silver;
+
+// font sizes
+$s:                 10px;
+$m:                 20px;
+$l:                 80px;
+// Styles
+$text_color:        $black;
+
+$padding-s:         0.1em;
+$padding-m:         0.3em;
+$padding-l:         1.6em;
+
+// Media Queries
+$bp-small:          400px;
+$bp-medium:         700px;
+$bp-large:          920px;
+$bp-extra-large:    1100px;
+$max-width:         1080px;
+
+// Font stack
+// $body-font: system-ui, Helvetica, "Helvetica Neue", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+$body-font: Futura, system-ui, "Trebuchet MS", Arial, sans-serif;
+
+
+
+// The base body size
+$body-font-size: 1em !default;
+
+// Monospace font stack
+$mono-font: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;

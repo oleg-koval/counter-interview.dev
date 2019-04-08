@@ -1,0 +1,45 @@
+url: http://counter-interview.dev
+title: Counter Interview
+description: An Open Source collection of Interview questions
+twitter: "@cntrinterview"
+twitter:
+  username: cntrinterview
+logo: /favicon.png
+
+twitter:
+  image: http://counter-interview.dev/favicon.png
+facebook:
+  image: http://counter-interview.dev/favicon.png
+
+twitter-url: http://twitter.com/cntrinterview
+contribute-url: http://github.com/oleg-koval/counter-interview.dev#contributing
+theme: jekyll-theme-minimal
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+include: ['_pages']
+
+environment: production
+
+collections:
+    examples:
+        output: true
+        permalink: /examples/:name
+    components:
+        output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "examples"
+    values:
+      layout: "example"
+
+exclude:
+- node_modules
+plugins:
+- jekyll-seo-tag
+
+liquid:
+    error_mode: lax

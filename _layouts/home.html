@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body class="home">
+  {% include header.html %}
+  <div class="wrapper">
+    {% include info-block.html title="What are Counter Questions?"
+        description="Its an open-sourced collection of interview questions collected from both sides of the game: Interviewer(s) and Interviewee."%}
+    {% include info-block.html title="Why use them?"
+        description="The interview process in ideal should be both sided conversation, so You as the Interviewee would like to prepare a set of questions for the Interviewer as well. " %}
+  </div>
+  {% include block-grid-featured.html%}
+  {% include footer.html %}
+</body>
+
+</html>
