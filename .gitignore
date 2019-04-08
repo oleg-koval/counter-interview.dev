@@ -6,7 +6,5 @@ _site/
 assets/css
 node_modules
 *.swp
-images/
-favicon.png
 .bundle/
 issues.md
