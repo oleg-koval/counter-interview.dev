@@ -29,6 +29,7 @@ Submissions need to contain the following:
 1.  A set of original questions with summary for each question.
 2.  A **source article**, **blog post** or **canonical page** listing a set of Interview questions in more detail.
 3.  Mark your submission with set of tags from this list: **general, technical, tricky, interviewer, interviewee**.
+4.  Create a new `.md` file in this [folder](https://github.com/oleg-koval/counter-interview.dev/tree/master/_examples)
 
 ### Template
 
