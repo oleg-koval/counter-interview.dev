@@ -8,4 +8,4 @@ body-class: about
 
 ## [counter-interview.dev](http://counter-interview.dev) is a resource where you can share your experience (interview questions for now) as Interviewee or Interviewer
 
-This collection is managed by [Oleg Koval](https://github.com/oleg-koval), Node.js developer living in Amsterdam
+_inspired by [@benbrignell](https://github.com/benbrignell) work: [design.principles](https://principles.design)_
