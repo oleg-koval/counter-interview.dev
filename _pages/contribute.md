@@ -35,6 +35,6 @@ Submissions need to contain the following:
 
 Here you can check simple example of how contribution should look like:
 
--   [Simple example](https://github.com/oleg-koval/counter-interview.dev#contributing)
+-   [Simple example](https://github.com/oleg-koval/counter-interview.dev/blob/master/questions.example.md)
 
 For more information and documentation about how to submit [take a look at the GitHub page](https://github.com/oleg-koval/counter-interview.dev#contributing).
