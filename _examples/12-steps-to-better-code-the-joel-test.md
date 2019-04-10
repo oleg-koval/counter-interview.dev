@@ -2,7 +2,7 @@
 title: The Joel Test 12 Steps to Better Code
 author: Joel Spolsky
 role:  interviewee
-overview: test to rate the quality of a software team
+overview: test to rate the quality of a software team, can be also applied during interview process
 link: https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/
 overview-author: spolsky
 questions:
