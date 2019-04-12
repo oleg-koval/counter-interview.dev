@@ -2,7 +2,7 @@
 title: 9 questions from my past 4-5 interviews.
 author: Oleg Koval
 role:  interviewee
-overview-author: rokanten
+twitter-handle: rokanten
 questions:
 - question: How do you evaluate the work of your employees?
 - question: How do you deal with overtimes?

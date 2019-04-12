@@ -4,7 +4,7 @@ author: Joel Spolsky
 role:  interviewee
 overview: test to rate the quality of a software team, can be also applied during interview process
 link: https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/
-overview-author: spolsky
+twitter-handle: spolsky
 questions:
 - question: Do you use source control?
   summary: if you don’t have source control, you’re going to stress out trying to get programmers to work together. Programmers have no way to know what other people did. Mistakes can’t be rolled back easily
