@@ -39,6 +39,7 @@ defaults:
 
 exclude:
 - node_modules
+- [vendor]
 plugins:
 - jekyll-seo-tag
 
