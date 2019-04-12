@@ -1,5 +1,5 @@
 ---
-title: 7 Key questions, to fit candidate into team
+title: 8 Questions, to fit candidate into team
 author: Ievgenii Vdovenko
 role:  interviewer
 overview: Aim of this questions is to build happy team. My believe is - if team is happy, it's more productive.
@@ -16,6 +16,7 @@ questions:
 - question: What is your perfect day at work - what you would like todo, or not...
 - question: Your biggest fail.
   summary: fails are more important that success, they could show how quick candidate learn, or if candidate do not do anything about their fails.
+- question: Conflict(s) with your colleagues, and how you solved it.
 
 
 tags: [interviewer, general]
