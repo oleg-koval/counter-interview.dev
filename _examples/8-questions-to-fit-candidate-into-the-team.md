@@ -5,7 +5,7 @@ role:  interviewer
 overview: The aim of these questions is to build a happy team. My belief is - if the team is happy, it's more productive.
 questions:
 - question: Describe your vision of the role you applied to.
-  summary: very often candidate and company think differently about the role, so need sync up such detail; 
+  summary: very often candidate and company think differently about the role, so need sync up such detail;
 - question: Deal breakers, or what situation/environment will immediately trigger a red flag in your head.
   summary: important information, because maybe env./team/etc. is wrong for the candidate, and could lead to future problems for you and candidate.
 - question: Evaluate yourself in {technology/language/etc.} in scale of 0-10
