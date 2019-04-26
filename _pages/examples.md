@@ -1,6 +1,6 @@
 ---
 layout: examples
-title: Examples
+title: Questions sets
 permalink: /examples/
 order: 3
 body-class: examples
