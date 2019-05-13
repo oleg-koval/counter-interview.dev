@@ -7,7 +7,7 @@ questions:
 - question: How do you evaluate the work of your employees?
 - question: How do you deal with overtimes?
 - question: How do you support juniors? Interns?
-  summary: Based on this you cat measure "empathy" of the environment and how mentoring and knowledge sharing are organised.
+  summary: Based on this you can measure "empathy" of the environment and how mentoring and knowledge sharing are organised.
 - question: What do you enjoy most working here?
 - question: What was the biggest accomplishment of your team/department yet?
 - question: How do you enforce/achieve the quality of code/work?
