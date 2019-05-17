@@ -7,7 +7,7 @@
     "sass": "node-sass --include-path _sass _sass/main.scss assets/css/main.css",
     "sass:watch": "nodemon -e scss -x \"npm run sass\"",
     "sass:build": "node-sass --include-path _sass _sass/main.scss _includes/main.css --output-style compressed",
-    "start:dev": "./development.sh"
+    "start:dev": "./development.sh",
     "start:prod": "./production.sh"
   },
   "repository": {
