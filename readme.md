@@ -12,6 +12,10 @@ You don't need to be able to code but you will need a (free) [GitHub](https://gi
 # Contributing to website
 
 * Fork this repo
+* Make sure you have ruby installed and install bundler gem:
+  ```sh
+  gem install bundle
+  ```
 * Install bundle:
   ```sh
   bundle install
