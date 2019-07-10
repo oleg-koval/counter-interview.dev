@@ -1,5 +1,5 @@
 ---
-title: 7 QUESTIONS TO ASK DURING A JOB INTERVIEW
+title: 7 questions to ask during a job interview
 author: Digitalgurus.online
 role:  interviewee
 overview: “So, do you have any questions for me?” Its the question asked at the end of almost every job interview. However, many still struggle with this part of the interview. Its common knowledge that not asking any questions can come across as a lack of interest in the position, but knowing which questions to ask isnt always easy. The end stage of a job interview shouldnt be faced with dread. This is your opportunity to shine and potentially straighten out any doubts the interviewer may have about you. Here are seven example questions to ask the interviewer
