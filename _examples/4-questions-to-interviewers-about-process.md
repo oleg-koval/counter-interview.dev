@@ -15,6 +15,6 @@ questions:
 - question: What's the process from creating a new repo to shipping to production?
   summary: This is a question to see WHO is responsible for continuous deployment, is it the developer, is it a Devops team setting the pipelines?  #[OPTIONAL FIELD]
 
-tags: tricky, interviewee                  #[REQUIRED FIELD] choose one of: general, tricky, interviewee, interviewer, technical
+tags: [tricky, interviewee]                  #[REQUIRED FIELD] choose one of: general, tricky, interviewee, interviewer, technical
 
 ---
