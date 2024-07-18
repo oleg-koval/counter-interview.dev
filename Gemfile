@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
 gem "jekyll-theme-minimal"
-gem 'github-pages', '>= 173'
-gem 'jekyll-last-modified-at'
+gem 'github-pages', '>= 229'
+gem 'jekyll-last-modified-at', '>= 1.1.0'
